@@ -162,13 +162,6 @@ function Seed() {
                                                 value={quantity}
                                                 onChange={e => setQuantity(e.target.value)}
                                                 labelWidth={0}
-                                                endAdornment={
-                                                    <InputAdornment position="end">
-                                                        <div onClick={setMax} className="stake-card-action-input-btn">
-                                                            <p>Max</p>
-                                                        </div>
-                                                    </InputAdornment>
-                                                }
                                             />
 
                                             {view === 0 && (
@@ -221,12 +214,6 @@ function Seed() {
                                                         </div>
                                                     )}
                                                 </div>
-                                            )}
-                                        </div>
-
-                                        <div className="stake-card-action-help-text">
-                                            {address && ((!hasAllowance("time") && view === 0) || (!hasAllowance("memo") && view === 1)) && (
-                                                <p> Note: The "Approve" transaction is only needed when depositing for the first time.</p>
                                             )}
                                         </div>
                                     </div>

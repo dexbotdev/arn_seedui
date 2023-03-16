@@ -47,7 +47,7 @@ function NavContent() {
 
                 {address && (
                     <div className="wallet-link">
-                        <Link href={`https://cchain.explorer.avax.network/address/${address}`} target="_blank">
+                        <Link href={`https://arbiscan.io/address/${address}`} target="_blank">
                             <p>{shorten(address)}</p>
                         </Link>
                     </div>
