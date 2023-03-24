@@ -5,15 +5,10 @@ import { Hidden, makeStyles, useMediaQuery } from "@material-ui/core";
 import { DRAWER_WIDTH, TRANSITION_DURATION } from "../../constants/style";
 import MobileDrawer from "../Drawer/mobile-drawer";
 import Drawer from "../Drawer";
-import { cubesImage } from "src/constants/img";
 import Messages from "../Messages";
-import LiquidityBanner from "../LiquidityBanner";
 import InfoBanner from "../InfoBanner";
-import AirdropBanner from "../AirdropBanner";
 import { useWeb3Context } from "../../hooks";
 import { Networks } from "../../constants/blockchain";
-import CatLeft from "../../assets/images/cat-left-min.png";
-import CatRight from "../../assets/images/cat-right-min.png";
 
 interface IViewBaseProps {
     children: React.ReactNode;

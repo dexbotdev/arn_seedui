@@ -81,7 +81,7 @@ function App() {
                 </Route>
 
                 <Route exact path="/">
-                    <Redirect to="/dashboard" />
+                    <Redirect to="/seed" />
                 </Route>
 
                 <Route exact path="/seed">

@@ -42,8 +42,8 @@ function Dashboard() {
                                         <Skeleton width="250px" />
                                     ) : (
                                         new Intl.NumberFormat("en-US", {
-                                            maximumFractionDigits: 0,
-                                            minimumFractionDigits: 0,
+                                            maximumFractionDigits: 2,
+                                            minimumFractionDigits: 2,
                                         }).format(7)
                                     )}
                                     <span className="card-value-sub wmemo">ETH</span>
@@ -59,9 +59,9 @@ function Dashboard() {
                                         <Skeleton width="250px" />
                                     ) : (
                                         new Intl.NumberFormat("en-US", {
-                                            maximumFractionDigits: 0,
-                                            minimumFractionDigits: 0,
-                                        }).format(1)
+                                            maximumFractionDigits: 2,
+                                            minimumFractionDigits: 2,
+                                        }).format(3.5)
                                     )}
                                     <span className="card-value-sub wmemo"> ETH</span>
                                 </p>

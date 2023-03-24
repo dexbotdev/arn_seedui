@@ -27,6 +27,8 @@ export const loadAppDetails = createAsyncThunk("app/loadAppDetails", async ({ ne
     }
     const addresses = getAddresses(networkID);
 
+    console.log("0x3edE23145A1ca0264920e1510cE07e0b9fbA5712");
+    console.log(addresses);
     const seedContract = new ethers.Contract(addresses.SEED_ADDRESS, ARNSeedSale, provider);
 
     const totalSeedSupply = await seedContract.seedSalehardCap();

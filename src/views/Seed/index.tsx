@@ -1,6 +1,7 @@
+// @ts-ignore
 import { useState, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Grid, InputAdornment, OutlinedInput, Zoom } from "@material-ui/core";
+import { Grid, InputAdornment, Link, OutlinedInput, Zoom } from "@material-ui/core";
 import RebaseTimer from "../../components/RebaseTimer";
 import { trim } from "../../helpers";
 import { changeStake, changeApproval } from "../../store/slices/stake-thunk";
@@ -126,9 +127,14 @@ function Seed() {
 
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="stake-card-index">
-                                            <p className="stake-card-metrics-title">My Share</p>
+                                            <p className="stake-card-metrics-title">KYC VERIFIED</p>
                                             <p className="stake-card-metrics-value">
-                                                {mySeedShare ? <>{new Intl.NumberFormat("en-US").format(Number(mySeedShare))}%</> : <Skeleton width="150px" />}
+                                                <Link
+                                                    className="tooltip-item"
+                                                    href={"https://pinksale.notion.site/Arbinium-KYC-Verification-c0271bb99a6e41878042b09ee82d8d51"}
+                                                    target="_blank">
+                                                    <p>Verify</p>
+                                                </Link>
                                             </p>
                                         </div>
                                     </Grid>
