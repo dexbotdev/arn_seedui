@@ -180,7 +180,7 @@ function Seed() {
                                                                 onChangeStake("stake");
                                                             }}
                                                         >
-                                                            <p>{txnButtonText(pendingTransactions, "staking", "Stake ETH")}</p>
+                                                            <p>{txnButtonText(pendingTransactions, "staking", "Contribute ETH")}</p>
                                                         </div>
                                                     ) : (
                                                         <div
