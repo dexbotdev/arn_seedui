@@ -38,10 +38,10 @@ const ETH_MAINNET: IChainAddresses = {
 };
 
 const AETH_MAINNET: IChainAddresses = {
-    SEED_ADDRESS: "0x3A0c751c0B884c1A6E5aD16e7Cd536a6fCc15f86",
+    SEED_ADDRESS: "0xBe4E192B57D10C75A9f673d7d49bF5a2F65eFbCC",
 };
 const AETH_TESTNET: IChainAddresses = {
-    SEED_ADDRESS: "0x4aB57feC2492B92f7a45E40aB162F47cFAC6AA1A",
+    SEED_ADDRESS: "0xB7dfb74A6bD747002Bc242E49d09d34E87e4D85d",
 };
 export const getAddresses = (networkID: number) => {
     if (networkID === Networks.AVAX) return AVAX_MAINNET;
